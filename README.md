@@ -12,9 +12,9 @@
 
 ## Installation
 
-```dart
+
 dart pub global activate flutter_boost_cli
-```
+
 
 ## Examples
 
