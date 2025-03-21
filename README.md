@@ -12,14 +12,16 @@
 
 ## Installation
 
-    ```bash
-    dart pub global activate flutter_boost_cli
+```bash
+dart pub global activate flutter_boost_cli
+```
 
 ## Examples
 
-    ```bash
-      flutter_boost_cli create featureX --provider
-    ```
+```bash
+flutter_boost_cli create featureX --provider
+```  
+    
         featureX/
         ├── featureX_provider/
         │   └── featureX_provider.dart
