@@ -12,9 +12,9 @@
 
 ## Installation
 
-   ```bash
-   dart pub global activate flutter_boost_cli
-   ```
+```dart
+dart pub global activate flutter_boost_cli
+```
 
 ## Examples
 
