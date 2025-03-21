@@ -32,9 +32,9 @@ flutter_boost_cli create featureX --provider
         └── featureX_service/
         └── featureX_service.dart
 
-    ```bash
-      flutter_boost_cli create featureX json2dart '{"name": "John", "age": 30}' --provider
-    ```    
+```bash
+flutter_boost_cli create featureX json2dart '{"name": "John", "age": 30}' --provider
+ ```    
        just added model in featureX_model.dart file
 
     ```dart
@@ -70,9 +70,9 @@ flutter_boost_cli create featureX --provider
         
     ```
 
-    ```bash
+```bash
     flutter_boost_cli create extension
-    ```
+```
 
 
 ## MIT License
