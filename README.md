@@ -34,10 +34,10 @@ flutter_boost_cli create featureX --provider
 
 ```bash
 flutter_boost_cli create featureX json2dart '{"name": "John", "age": 30}' --provider
- ```    
+```    
 just added model in featureX_model.dart file with file structure
 
-    ```dart
+```dart
     // To parse this JSON data, do
     //
     //     final featureX = featurexFromJson(jsonString);
@@ -68,7 +68,7 @@ just added model in featureX_model.dart file with file structure
       };
     }
         
-    ```
+ ```
 
 ```bash
 flutter_boost_cli create extension
