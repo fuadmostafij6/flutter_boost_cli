@@ -3,12 +3,17 @@ description:  A CLI tool to generate Flutter feature modules with provider, mode
 version: 1.0.0
 repository: https://github.com/fuadmostafij6/flutter_boost_cli
 
+executables:
+  flutter_boost_cli: flutter_boost_cli
+
 environment:
   sdk: ^3.7.0
 
 # Add regular dependencies here.
 dependencies:
   # path: ^1.8.0
+  args: ^2.4.2
+  path: ^1.8.3
 
 dev_dependencies:
   lints: ^5.0.0
