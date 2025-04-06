@@ -17,9 +17,11 @@ dart pub global activate flutter_boost_cli
 ```
 
 ## Examples
+1. Create a Feature with Provider Files
+   To create a new feature (e.g., login) with provider, model, screen, and service files, run:
 
 ```bash
-flutter_boost_cli create featureX --provider
+flutter_boost_cli c featureX --p
 ```  
     
         featureX/
@@ -33,7 +35,7 @@ flutter_boost_cli create featureX --provider
         └── featureX_service.dart
 
 ```bash
-flutter_boost_cli create featureX json2dart '{"name": "John", "age": 30}' --provider
+flutter_boost_cli c featureX json2dart '{"name": "John", "age": 30}' --p
 ```    
 just added model in featureX_model.dart file with file structure
 
@@ -71,8 +73,12 @@ just added model in featureX_model.dart file with file structure
  ```
 
 ```bash
-flutter_boost_cli create extension
+flutter_boost_cli c ex
 ```
+
+This command will create a new extension file in the `lib/extensions` directory. The generated file will contain a simple extension for the `BuildContext` class.
+
+```bash
 
 
 ## MIT License

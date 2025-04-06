@@ -4,7 +4,7 @@ import 'dart:io';
 
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
-    print("Usage: fluttercli c featureX [--p] | featureX json2dart '{\"key\": \"value\"}' [--p]");
+    print("Usage: flutter_boost_cli c featureX [--p] | featureX json2dart '{\"key\": \"value\"}' [--p]");
     return;
   }
 
@@ -13,7 +13,7 @@ void main(List<String> arguments) {
   final isProvider = arguments.contains("--p"); // Check if provider flag exists
   final jsonString = arguments.length > 3 ? arguments[3] : null;
   // Create feature with provider file, model, and screen
-  if(action == "c" && featureName =="extension"){
+  if(action == "c" && featureName =="ex"){
     final baseDir = Directory(featureName);
     if (baseDir.existsSync()) {
       print("❌ Error: extension already exists.");
@@ -24,18 +24,18 @@ void main(List<String> arguments) {
         .writeAsStringSync(generateExtensionClass());
     print("✅ generated extension.dart");
   }
-  else if (action == "create" && isProvider) {
+  else if (action == "c" && isProvider) {
     createFeatureWithProviderFiles(featureName);
   }
   // JSON to Dart conversion
-  else if (action == "create" && jsonString != null) {
+  else if (action == "c" && jsonString != null) {
     if (isProvider) {
       createFeatureWithProviderFiles(featureName);
     }
     else{}
     generateJsonModel(isProvider ? "$featureName/${featureName}_model" : ".", featureName, jsonString);
   } else {
-    print("❌ Unknown command. Use: fluttercli create featureX [--provider] | featureX json2dart  '{\"key\": \"value\"}' [--provider]");
+    print("❌ Unknown command. Use: flutter_boost_cli create featureX [--provider] | featureX json2dart  '{\"key\": \"value\"}' [--provider]");
   }
 }
 

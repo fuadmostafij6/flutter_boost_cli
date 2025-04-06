@@ -1,6 +1,6 @@
 name: flutter_boost_cli
 description:  A CLI tool to generate Flutter feature modules with provider, model, screen, and service files.
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/fuadmostafij6/flutter_boost_cli
 
 executables:
